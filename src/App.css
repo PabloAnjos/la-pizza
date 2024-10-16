@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  background-color: #fefbf4;
+}
+
+.mais-vendidas {
+  width: 100%;
+  height: 746px;
+  background-image: url("images/bg-tomate.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container-cards {
+    width: 1237px;
+    height: 746px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: auto;
+
+    @media (max-width: 768px) {
+      width: 327px;
+      height: 1557px;
+      flex-direction: column;
+      gap: 100px;
+      margin-top: 100px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 1732px;
+    background-position: calc(60%);
+  }
+}
+
+.sobre {
+  width: 100%;
+  height: 700px;
+  background-color: #fefbf4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container-sobre {
+    width: 1216px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .content-sobre {
+      width: 592px;
+      height: 284px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      h1 {
+        font-size: 2.25rem;
+        font-weight: 600;
+
+        .yellow {
+          color: #ffd103;
+        }
+
+        .red {
+          color: #ff0000;
+        }
+
+        .green {
+          color: #008000;
+        }
+      }
+
+      p {
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 27px;
+      }
+
+      button {
+        width: 195px;
+        height: 41px;
+        padding: 12px 40px 12px 40px;
+        border-radius: 25px;
+        border-style: none;
+        cursor: pointer;
+        background-color: #ffa70f;
+        font-size: 0.8rem;
+        font-weight: 600;
+
+        &:hover {
+          background-color: #ffbd48;
+          transition: 0.3s;
+        }
+      }
+
+      @media (max-width: 768px) {
+        width: 327px;
+        height: 392px;
+
+        p {
+          max-width: 327px;
+          font-size: 1.125rem;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 327px;
+      height: 856px;
+      flex-direction: column;
+
+      img {
+        width: 327px;
+        height: 400px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 375px;
+    height: 984px;
+    padding: 64px 24px 64px 24px;
+    margin: auto;
+  }
+}
